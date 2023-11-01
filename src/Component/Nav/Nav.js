@@ -9,7 +9,7 @@ export default function Nav() {
            <div className='container p-3'>
                 <nav className="navbar navbar-expand-md navbar-dark">
                     <a className="navbar-brand " href="/">
-                        <h1>Apni Zameen</h1>
+                        <h1>Apni <span className='bg-info text-white'>Zameen</span></h1>
                     </a>
                     <button className="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                       <span className="navbar-toggler-icon"></span>
