@@ -1,0 +1,52 @@
+#about-ser-cf #about-ser-item{
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // background-color: aquamarine;
+}
+
+#about-ser-cf #about-ser-item-2{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#about-ser-cf #about-ser-item-2 p{
+   font-weight: 500;
+}
+#about-ser-cf #about-ser-item-2 input{
+   width: 100%;
+   border-radius: 5px;
+   outline: none;
+   border: 0.5px solid gray;
+   margin: 10px 0;
+   padding: 2px 5px;
+}
+#about-ser-cf #about-ser-item-2 button{
+   padding: 3px 10px;
+}
+//right
+
+#about-ser-cf #col-rs img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+#about-ser-cf #col-rs .as-right-item{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#about-ser-cf #col-rs .as-right-item p,span{
+   font-size: 14px;
+   margin: 0;
+}
+#about-ser-cf #col-rs .as-right-item h5{
+   font-size: 16px;
+padding-top: 10px;
+}
+#about-ser-cf #col-rs .as-right-item hr{
+    margin: 5px 0;
+}
+#about-ser-cf #col-rs .as-right-item button{
+   font-size: 12px;
+   font-weight: 700;
+}

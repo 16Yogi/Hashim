@@ -1,7 +1,6 @@
 import React from 'react'
 import Nav from '../Component/Nav/Nav'
 import Banner from '../Component/Banner/Banner'
-import About from '../Component/About/About'
 import Service from '../Component/Service/Service'
 import Research from '../Component/Research/Research'
 import Analysis from '../Component/Analysis/Analysis'
@@ -16,7 +15,6 @@ export default function Home() {
     <>
        <Nav/>
        <Banner/>
-       <About/>
        <Service/>
        <Research/>
        <Analysis/>

@@ -55,28 +55,28 @@ export default function Workstogether() {
                     </div>
                     <div className='col p-5 mx-auto' id="worktogether-wrapper">
                         <form action="" method=''>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="username">Full Name:</label>
-                              <input type="text" class="form-control" placeholder="Full Name" id="username" name="name" onChange={name1} value={name}/>
+                              <input type="text" className="form-control" placeholder="Full Name" id="username" name="name" onChange={name1} value={name}/>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="email">Email Address:</label>
-                              <input type="email" class="form-control" placeholder="Email" id="email" name="email" onChange={email1} value={email}/>
+                              <input type="email" className="form-control" placeholder="Email" id="email" name="email" onChange={email1} value={email}/>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="mobile">Mobile:</label>
-                              <input type="mobile" class="form-control" placeholder="Mobile Number" id="mobile" onChange={mobile1} value={mobile}/>
+                              <input type="mobile" className="form-control" placeholder="Mobile Number" id="mobile" onChange={mobile1} value={mobile}/>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                               <label for="comment">Comment:</label>
-                              <textarea class="form-control" rows="5" id="comment" name="comment" onChange={comment1} value={comment}></textarea>
+                              <textarea className="form-control" rows="5" id="comment" name="comment" onChange={comment1} value={comment}></textarea>
                             </div>
-                            {/* <div class="form-group form-check">
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox"/> Remember me
+                            {/* <div className="form-group form-check">
+                              <label className="form-check-label">
+                                <input className="form-check-input" type="checkbox"/> Remember me
                               </label>
                             </div> */}
-                            <button type="submit" class="btn btn-info" name='submit' onClick={senddata}>Submit</button>
+                            <button type="submit" className="btn btn-info" name='submit' onClick={senddata}>Submit</button>
                         </form>
                     </div>
                 {/* </div> */}
