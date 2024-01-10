@@ -1,0 +1,51 @@
+
+#viewproperty-cf #vproperty-wrap #vp-item img{
+    height: 300px;
+    width: 100%;
+    // border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#viewproperty-cf #vproperty-wrap #vp-item .img-2 img{
+    height: 149px;
+}
+#viewproperty-cf #vproperty-wrap #vp-item span{
+    font-weight: 700;
+}
+#viewproperty-cf #vproperty-wrap #right-propty-item{
+    border: 0.5px solid rgb(224, 215, 215);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // background-color: red;
+}
+#viewproperty-cf #vproperty-wrap #visit-property-button-group button{
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px;
+}
+#viewproperty-cf #vproperty-wrap #propty-notes {
+    border-radius: 10px;
+   background-color: rgba(119, 250, 158, 0.596);
+}
+
+#viewproperty-cf #vproperty-wrap #top-facility .facility-item{
+    // background-color: red;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#viewproperty-cf #vproperty-wrap #location-advantages .loc-item{
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#viewproperty-cf #vproperty-wrap #location-advantages .loc-item i{
+   font-size: 20px;
+}
+#viewproperty-cf #vproperty-wrap .ready-to-move .ready-item{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#viewproperty-cf #vproperty-wrap .ready-to-move .ready-item button{
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: 600;
+    // background-color: indigo;
+}

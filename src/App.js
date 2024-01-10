@@ -17,6 +17,11 @@ import Project from "./Pages/Project";
 import Contact from "./Pages/Contact";
 import Index from "./Component/Admin/Index";
 import Serviceitem from "./Pages/Serviceitem";
+import Sellbuy from "./Pages/Sellbuy";
+import Viewpropetypage from "./Pages/Viewpropetypage";
+import Login from "./Component/Form/Login";
+import Registration from "./Component/Form/Registration";
+import Forget from "./Component/Form/Forget";
 // import Admin from "./"
 function App() {
   return (
@@ -33,6 +38,12 @@ function App() {
           {/* <Route path='/admin' element={<Contact/>}/> */}
           <Route path="/Aboutservice" element={<Serviceitem/>}/>
           <Route path='/Admin' element={<Index/>}/>
+          <Route path="/sellbuy" element={<Sellbuy></Sellbuy>}/>
+          <Route path="/viewpropety" element={<Viewpropetypage/>}/>
+          {/* form */}
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/registration" element={<Registration/>}/>
+          <Route path="/forget" element={<Forget/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

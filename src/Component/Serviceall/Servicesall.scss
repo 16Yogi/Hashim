@@ -1,0 +1,21 @@
+#serviceall-cf h3{
+    line-height: 50px;
+}
+#serviceall-cf #serviceall-item{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+#serviceall-cf #serviceall-item img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+#serviceall-cf #serviceall-item p{
+    padding-top: 20px;
+}
+#serviceall-cf #serviceall-item button{
+    font-weight: 700;
+}
+#serviceall-cf #serviceall-item button:nth-child(4){
+    border: 0.5px solid gray;
+}

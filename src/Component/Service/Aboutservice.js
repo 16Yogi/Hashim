@@ -2,6 +2,7 @@ import React from 'react'
 import './Aboutservice.scss'
 
 import GoogleMapReact from 'google-map-react';
+import { Link } from 'react-router-dom';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 export default function Aboutservice() {
@@ -68,120 +69,424 @@ export default function Aboutservice() {
                             <div className="p-0 col-lg-12 col-md-12 col-sm-12 as-right-item">
                                 <div className="row">
                                     <div className="col-4">
-                                        <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        <Link to="/viewpropety">
+                                            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        </Link>
                                     </div>
                                     <div className="col-8 py-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                        <p><strong>Lorem ipsum dolor sit</strong></p>
-                                        <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
-                                        <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
-                                        <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
-                                        <hr />
-                                        <button className="btn btn-info">View Phone Number</button>
-                                        <button className="btn btn-info mx-4">Contact Owner</button>
+                                        <Link to="/viewpropety" className='text-decoration-none text-dark'>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                            <p><strong>Lorem ipsum dolor sit</strong></p>
+                                            <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
+                                            <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
+                                            <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
+                                            <hr />
+                                        </Link>
+                                        <button className="btn btn-info" data-toggle="modal" data-target="#mobilenumber">View Phone Number</button>
+                                        <button className="btn btn-info mx-4" data-toggle="modal" data-target="#ownerdetails">Contact Owner</button>
                                     </div>
+                                    {/* Mobile number model */}
+                                    <div class="modal fade" id="mobilenumber">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">View Mobile Number</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            MoBile Number:- +91-7896541230
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Mobile number model */}
+                                    {/* Owner Details model */}
+                                    <div class="modal fade" id="ownerdetails">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">Owner Details</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            <p><b>Owner Name-</b> Mohan Pandey</p>
+                                            <p><b>Address-</b> Bhopal, Bhopal, Pincode-789654</p>
+                                            <p><b>Mobile Number-</b> +91-7896541230</p> 
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Owner Details model */}
+
                                 </div>
                             </div>
+                            
+                            <div className="p-0 my-4 col-lg-12 col-md-12 col-sm-12 as-right-item">
+                            <div className="row">
+                                    <div className="col-4">
+                                        <Link to="/viewpropety">
+                                            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        </Link>
+                                    </div>
+                                    <div className="col-8 py-2">
+                                        <Link to="/viewpropety" className='text-decoration-none text-dark'>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                            <p><strong>Lorem ipsum dolor sit</strong></p>
+                                            <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
+                                            <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
+                                            <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
+                                            <hr />
+                                        </Link>
+                                        <button className="btn btn-info" data-toggle="modal" data-target="#mobilenumber">View Phone Number</button>
+                                        <button className="btn btn-info mx-4" data-toggle="modal" data-target="#ownerdetails">Contact Owner</button>
+                                    </div>
+                                    {/* Mobile number model */}
+                                    <div class="modal fade" id="mobilenumber">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">View Mobile Number</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            MoBile Number:- +91-7896541230
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Mobile number model */}
+                                    {/* Owner Details model */}
+                                    <div class="modal fade" id="ownerdetails">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">Owner Details</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            <p><b>Owner Name-</b> Mohan Pandey</p>
+                                            <p><b>Address-</b> Bhopal, Bhopal, Pincode-789654</p>
+                                            <p><b>Mobile Number-</b> +91-7896541230</p> 
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Owner Details model */}
+
+                                </div>
+                            </div>
+
                             <div className="p-0 my-4 col-lg-12 col-md-12 col-sm-12 as-right-item">
                                 <div className="row">
                                     <div className="col-4">
-                                        <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        <Link to="/viewpropety">
+                                            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        </Link>
                                     </div>
                                     <div className="col-8 py-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                        <p><strong>Lorem ipsum dolor sit</strong></p>
-                                        <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
-                                        <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
-                                        <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
-                                        <hr />
-                                        <button className="btn btn-info">View Phone Number</button>
-                                        <button className="btn btn-info mx-4">Contact Owner</button>
+                                        <Link to="/viewpropety" className='text-decoration-none text-dark'>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                            <p><strong>Lorem ipsum dolor sit</strong></p>
+                                            <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
+                                            <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
+                                            <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
+                                            <hr />
+                                        </Link>
+                                        <button className="btn btn-info" data-toggle="modal" data-target="#mobilenumber">View Phone Number</button>
+                                        <button className="btn btn-info mx-4" data-toggle="modal" data-target="#ownerdetails">Contact Owner</button>
                                     </div>
+                                    {/* Mobile number model */}
+                                    <div class="modal fade" id="mobilenumber">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">View Mobile Number</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            MoBile Number:- +91-7896541230
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Mobile number model */}
+                                    {/* Owner Details model */}
+                                    <div class="modal fade" id="ownerdetails">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">Owner Details</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            <p><b>Owner Name-</b> Mohan Pandey</p>
+                                            <p><b>Address-</b> Bhopal, Bhopal, Pincode-789654</p>
+                                            <p><b>Mobile Number-</b> +91-7896541230</p> 
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Owner Details model */}
+
                                 </div>
                             </div>
+
                             <div className="p-0 my-4 col-lg-12 col-md-12 col-sm-12 as-right-item">
                                 <div className="row">
                                     <div className="col-4">
-                                        <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        <Link to="/viewpropety">
+                                            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        </Link>
                                     </div>
                                     <div className="col-8 py-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                        <p><strong>Lorem ipsum dolor sit</strong></p>
-                                        <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
-                                        <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
-                                        <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
-                                        <hr />
-                                        <button className="btn btn-info">View Phone Number</button>
-                                        <button className="btn btn-info mx-4">Contact Owner</button>
+                                        <Link to="/viewpropety" className='text-decoration-none text-dark'>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                            <p><strong>Lorem ipsum dolor sit</strong></p>
+                                            <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
+                                            <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
+                                            <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
+                                            <hr />
+                                        </Link>
+                                        <button className="btn btn-info" data-toggle="modal" data-target="#mobilenumber">View Phone Number</button>
+                                        <button className="btn btn-info mx-4" data-toggle="modal" data-target="#ownerdetails">Contact Owner</button>
                                     </div>
+                                    {/* Mobile number model */}
+                                    <div class="modal fade" id="mobilenumber">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">View Mobile Number</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            MoBile Number:- +91-7896541230
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Mobile number model */}
+                                    {/* Owner Details model */}
+                                    <div class="modal fade" id="ownerdetails">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">Owner Details</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            <p><b>Owner Name-</b> Mohan Pandey</p>
+                                            <p><b>Address-</b> Bhopal, Bhopal, Pincode-789654</p>
+                                            <p><b>Mobile Number-</b> +91-7896541230</p> 
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Owner Details model */}
+
                                 </div>
                             </div>
                             <div className="p-0 my-4 col-lg-12 col-md-12 col-sm-12 as-right-item">
-                                <div className="row">
+                            <div className="row">
                                     <div className="col-4">
-                                        <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        <Link to="/viewpropety">
+                                            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        </Link>
                                     </div>
                                     <div className="col-8 py-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                        <p><strong>Lorem ipsum dolor sit</strong></p>
-                                        <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
-                                        <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
-                                        <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
-                                        <hr />
-                                        <button className="btn btn-info">View Phone Number</button>
-                                        <button className="btn btn-info mx-4">Contact Owner</button>
+                                        <Link to="/viewpropety" className='text-decoration-none text-dark'>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                            <p><strong>Lorem ipsum dolor sit</strong></p>
+                                            <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
+                                            <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
+                                            <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
+                                            <hr />
+                                        </Link>
+                                        <button className="btn btn-info" data-toggle="modal" data-target="#mobilenumber">View Phone Number</button>
+                                        <button className="btn btn-info mx-4" data-toggle="modal" data-target="#ownerdetails">Contact Owner</button>
                                     </div>
+                                    {/* Mobile number model */}
+                                    <div class="modal fade" id="mobilenumber">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">View Mobile Number</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            MoBile Number:- +91-7896541230
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Mobile number model */}
+                                    {/* Owner Details model */}
+                                    <div class="modal fade" id="ownerdetails">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">Owner Details</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            <p><b>Owner Name-</b> Mohan Pandey</p>
+                                            <p><b>Address-</b> Bhopal, Bhopal, Pincode-789654</p>
+                                            <p><b>Mobile Number-</b> +91-7896541230</p> 
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Owner Details model */}
+
                                 </div>
                             </div>
                             <div className="p-0 my-4 col-lg-12 col-md-12 col-sm-12 as-right-item">
-                                <div className="row">
+                            <div className="row">
                                     <div className="col-4">
-                                        <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        <Link to="/viewpropety">
+                                            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        </Link>
                                     </div>
                                     <div className="col-8 py-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                        <p><strong>Lorem ipsum dolor sit</strong></p>
-                                        <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
-                                        <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
-                                        <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
-                                        <hr />
-                                        <button className="btn btn-info">View Phone Number</button>
-                                        <button className="btn btn-info mx-4">Contact Owner</button>
+                                        <Link to="/viewpropety" className='text-decoration-none text-dark'>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                            <p><strong>Lorem ipsum dolor sit</strong></p>
+                                            <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
+                                            <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
+                                            <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
+                                            <hr />
+                                        </Link>
+                                        <button className="btn btn-info" data-toggle="modal" data-target="#mobilenumber">View Phone Number</button>
+                                        <button className="btn btn-info mx-4" data-toggle="modal" data-target="#ownerdetails">Contact Owner</button>
                                     </div>
+                                    {/* Mobile number model */}
+                                    <div class="modal fade" id="mobilenumber">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">View Mobile Number</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            MoBile Number:- +91-7896541230
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Mobile number model */}
+                                    {/* Owner Details model */}
+                                    <div class="modal fade" id="ownerdetails">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">Owner Details</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            <p><b>Owner Name-</b> Mohan Pandey</p>
+                                            <p><b>Address-</b> Bhopal, Bhopal, Pincode-789654</p>
+                                            <p><b>Mobile Number-</b> +91-7896541230</p> 
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/* End Owner Details model */}
+
                                 </div>
                             </div>
                             <div className="p-0 my-4 col-lg-12 col-md-12 col-sm-12 as-right-item">
-                                <div className="row">
+                            <div className="row">
                                     <div className="col-4">
-                                        <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        <Link to="/viewpropety">
+                                            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                        </Link>
                                     </div>
                                     <div className="col-8 py-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                        <p><strong>Lorem ipsum dolor sit</strong></p>
-                                        <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
-                                        <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
-                                        <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
-                                        <hr />
-                                        <button className="btn btn-info">View Phone Number</button>
-                                        <button className="btn btn-info mx-4">Contact Owner</button>
+                                        <Link to="/viewpropety" className='text-decoration-none text-dark'>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                            <p><strong>Lorem ipsum dolor sit</strong></p>
+                                            <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
+                                            <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
+                                            <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
+                                            <hr />
+                                        </Link>
+                                        <button className="btn btn-info" data-toggle="modal" data-target="#mobilenumber">View Phone Number</button>
+                                        <button className="btn btn-info mx-4" data-toggle="modal" data-target="#ownerdetails">Contact Owner</button>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="p-0 my-4 col-lg-12 col-md-12 col-sm-12 as-right-item">
-                                <div className="row">
-                                    <div className="col-4">
-                                        <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=400" alt="" />
+                                    {/* Mobile number model */}
+                                    <div class="modal fade" id="mobilenumber">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">View Mobile Number</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            MoBile Number:- +91-7896541230
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div className="col-8 py-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                        <p><strong>Lorem ipsum dolor sit</strong></p>
-                                        <h5><strong className=''>RS-45000</strong><strong className='px-5'>45000 sq.ft</strong> <strong className=''>1 BHK</strong></h5>
-                                        <p className='py-2'><span>Lorem ipsum</span><span className='px-5'>Lorem ipsum</span><span>Lorem ipsum</span></p>
-                                        <span>Lorem ipsum amet consectetur adipisicing elit Itaque expedita</span>
-                                        <hr />
-                                        <button className="btn btn-info">View Phone Number</button>
-                                        <button className="btn btn-info mx-4">Contact Owner</button>
+                                    {/* End Mobile number model */}
+                                    {/* Owner Details model */}
+                                    <div class="modal fade" id="ownerdetails">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">    
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">Owner Details</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>                         
+                                          <div class="modal-body">
+                                            <p><b>Owner Name-</b> Mohan Pandey</p>
+                                            <p><b>Address-</b> Bhopal, Bhopal, Pincode-789654</p>
+                                            <p><b>Mobile Number-</b> +91-7896541230</p> 
+                                          </div>   
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
+                                    {/* End Owner Details model */}
+
                                 </div>
                             </div>
                         </div>
