@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Service2() {
   return (
     <>
-       <div className="container-fluid bg-info" id="service2-cf">
+       <div className="container-fluid" id="service2-cf">
         <div className="container py-4">
             <div className="row">
                 <div className="col-lg-4 col-md-6 col-sm-12 my-3">
